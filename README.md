@@ -13,4 +13,4 @@ My model XGBoost got 86.3% accuracy and F1 score of 0.817 — which means it cor
 The ROC-AUC was 0.952 out of 1.0 
 
 Class Imbalance Problem:
-Here's the tricky part — only 5.7% of employees were High risk. That means if a dumb model just says 'everyone is Low risk' it gets 94% accuracy but catches zero high-risk employees — useless for HR. We used a technique called SMOTE which creates synthetic examples of rare cases so the model actually learns to catch the dangerous ones. After SMOTE our High-risk detection F1 went from basically zero to 0.70.
+Here's the tricky part — only 5.7% of employees were High risk. That means if a dumb model just says 'everyone is Low risk' it gets 94% accuracy but catches zero high-risk employees — useless for HR. I used a technique called SMOTE which creates synthetic examples of rare cases so the model actually learns to catch the dangerous ones. After SMOTE High-risk detection F1 went from basically zero to 0.70.
